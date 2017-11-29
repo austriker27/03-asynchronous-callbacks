@@ -4,3 +4,6 @@ Tests are run through jest.
 
 ## installation
 To install, run `npm install` to install eslint and jest. 
+
+## ipsum generator used
+[Monty Python Ipsum](https://montypythonipsum.com/)
