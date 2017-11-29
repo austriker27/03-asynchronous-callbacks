@@ -1,5 +1,3 @@
-import { log } from 'util';
-
 'use strict';
 
 const fs = require('fs');
