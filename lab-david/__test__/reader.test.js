@@ -7,7 +7,7 @@ describe('reader.test.js', () => {
 
     reader.readFile((error,data) => {
       expect(error).toBeNull();
-      expect(data).toEqual('Not necessarily. I could be arguing in my spare t');
+      expect(data).toEqual('Not necessarily. I could be arguing in my spare ti');
       done();
     });
   }));
