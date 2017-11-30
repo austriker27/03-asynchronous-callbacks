@@ -1,5 +1,7 @@
 'use strict';
 
+// not even sure if I need this - DELETE ME ? 
+
 const fs = require('fs');
 
 let flyingCircusPath = `${__dirname}/data/flying-circus.txt`;

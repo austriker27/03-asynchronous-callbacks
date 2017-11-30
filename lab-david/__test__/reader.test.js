@@ -3,13 +3,14 @@
 const reader = require('../lib/reader');
 
 describe('reader.test.js', () => {
-  test('the first 50 characters of the file should be returned if there are no errors', (done => {
+  test('the first 50 characters of each file should be returned if there are no errors', (done => {
 
-    reader.readFile((error,data) => {
+    reader.readFile((error,newArray) => {
       expect(error).toBeNull();
       //TODO: require that the array of filepaths be an array
       //    expect(type).toBe('array');
-      expect(data).toEqual([`Not necessarily. I could be arguing in my spare ti`, `Are you suggesting coconuts migrate? You don't fr`, `This is boring. Let's go watch a stoning. Manacle`]);
+      // TODO: write a test to make sure the filepath is valid
+      expect(newArray).toEqual([`Not necessarily. I could be arguing in my spare ti`, `Are you suggesting coconuts migrate? You don't fri`, `This is boring. Let's go watch a stoning. Manacles`]);
       done();
     });
   }));
