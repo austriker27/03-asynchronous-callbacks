@@ -10,12 +10,6 @@ let filePathsArray =
   `${__dirname}/../assets/life-of-brian.txt`,
 ];
 
-// let flyingCircusPath = `${__dirname}/../assets/flying-circus.txt`;
-// let holyGrailPath = `${__dirname}/../assets/holy-grail.txt`;
-// let lifeOfBrianPath = `${__dirname}/../assets/life-of-brian.txt`;  
-// let filePathsArray2 = [flyingCircusPath, holyGrailPath, lifeOfBrianPath];
-
-
 reader.readFile = (paths, callback) => {
   let newArray = [];     
   fs.readFile(filePathsArray[0], (error,data) => {
@@ -35,7 +29,6 @@ reader.readFile = (paths, callback) => {
         callback(null,newArray);
         
       });  
-      
     });
   });
 };
