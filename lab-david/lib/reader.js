@@ -16,7 +16,7 @@ let filePathsArray =
 // let filePathsArray2 = [flyingCircusPath, holyGrailPath, lifeOfBrianPath];
 
 
-reader.readFile = (callback) => {
+reader.readFile = (paths, callback) => {
   let newArray = [];     
   fs.readFile(filePathsArray[0], (error,data) => {
     if(error)
